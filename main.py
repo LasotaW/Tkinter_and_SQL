@@ -42,7 +42,7 @@ def addWindow():
             mycursor.execute(x)
             mydb.commit()
         except:
-            messagebox.showwarning("Błąd!", "Wypełnij wszystkie pola!")
+            messagebox.showwarning("Błąd!", "Nie wypełniono wszystkich pól lub podany rekord nie istnieje!")
 
         rowID.delete(0, tk.END)
         orderID.delete(0, tk.END)
@@ -265,7 +265,7 @@ def searchWindow():
 
     win = tk.Tk()
     win.title("Wyszukaj rekord")
-    win.geometry("550x600")
+    win.geometry("800x600")
     
     usrSearch = tk.StringVar(win)
     usrSearchLabel = tk.Label(win, text="Wprowadź dane", font=("bold", 15))
