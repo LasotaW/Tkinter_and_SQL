@@ -2,7 +2,6 @@ import tkinter as tk
 import mysql.connector
 import tkinter.ttk as ttk
 from tkinter import messagebox
-from PIL import ImageTk, Image
 
 mydb = mysql.connector.connect(
     host="localhost",
